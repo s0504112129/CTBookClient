@@ -1,0 +1,24 @@
+
+<p class="piska">enter your first name</p>
+<input type="text" [(ngModel)]="detail.firstName" name="firstName" (blur)="chekFirstName()" required/><br/>
+<p class="piska">enter your last name</p>
+<input type="text" [(ngModel)]="detail.lastName" name="lastName" (blur)="chekLastName()" required/><br/>
+<p class="piska">enter your tz</p>
+<input type="text"[(ngModel)]="detail.tzUser" name="tz" (blur)="chekTz()" required/><br/>
+<p class="piska">enter your dateBorn</p>
+<input type="date" [(ngModel)]="detail.Date" name="dateBorn" required/><br/>
+<p class="piska">enter your min</p>
+<input type="text" [(ngModel)]="detail.min" name="min" required/><br/>
+<p class="piska">enter your HMO</p>
+<input type="text" [(ngModel)]="detail.HMO" name="HMO" required/><br/>
+
+<!-- <button (click)="save()" >save</button><br/> -->
+<button class="btn" (click)="addChile()">to add children</button><br/>
+ 
+<app-children *ngIf="isChild" (out)="add($event)"></app-children>
+
+<input class="sub" type="submit" (click)="addDetail()" name="send"/>
+<!-- <p routerLink="/children"> to add children click here</p> -->
+
+
+

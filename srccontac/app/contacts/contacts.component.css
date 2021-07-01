@@ -1,0 +1,10 @@
+.wrapper{
+    width: 20%;
+    height: 60%;
+    border: 2px solid black;
+    margin-left: 35%;
+}
+.button{
+    margin-left: 90%;
+    margin-top: 2%;
+}

@@ -1,0 +1,13 @@
+.piska{
+    font-size: 20px;
+    color:palevioletred;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn{
+    height: 30px;
+    widows: 15px;
+    color: palevioletred;
+    /* background-color: rgb(187, 228, 241); */
+    margin-top: 5px;
+    border: none;
+}

@@ -1,0 +1,9 @@
+<div class="wrapper" *ngFor="let c of arrContacts">
+  <p>{{c.id}}</p>
+  <p>{{c.name}}</p>
+  <p>{{c.phone}}</p>
+  <input type="text" [(ngModel)]="c.name" />
+  <input type="text" [(ngModel)]="c.phone" />
+  <button (click)="save(c)">save</button>
+  <button class="button" (click)="delete(c)">X</button>
+</div>
